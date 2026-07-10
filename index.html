@@ -1,9 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Nothing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image on Click</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        img {
+            display: none;
+            margin-top: 30px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body>
-  <iframe width="862" height="485" src="https://www.vidking.net/embed/movie/687163" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Click the Button!</h1>
+
+    <button onclick="showImage()">Click Me</button>
+
+    <br>
+
+    <img id="myImage" src="C:\Users\apoor\Downloads\mf.avif" alt="Random Image">
+
+    <script>
+        function showImage() {
+            document.getElementById("myImage").style.display = "block";
+        }
+    </script>
+
 </body>
 </html>
